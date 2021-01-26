@@ -16,6 +16,8 @@ npm i ang-virtual-keyboard
 ### Other variants
 ![Keyboard Type 1](https://github.com/CodeIsAnArt/ang-virtual-keyboard/blob/master/projects/ang-virtual-keyboard-sample/src/assets/Screenshots.png?raw=true)
 
+## [Working Example](https://github.com/CodeIsAnArt/ang-virtual-keyboard/tree/master/projects/ang-virtual-keyboard-sample) 
+
 ## Features : 
 **1.  Three Layouts avaliable**
 
