@@ -18,9 +18,9 @@ npm i ang-virtual-keyboard
 
 ## Features : 
 **1.  3 layouts **
-        ----  Keyboard without side numpad
-        ---- Keyboard with side numpad
-        ---- Keyboard with only numpad
+        ---- Keyboard without side numpad  
+        ---- Keyboard with side numpad  
+        ---- Keyboard with only numpad  
 **2.  Shuffle on key press**
 **3.  Mask on key press**
 
@@ -50,13 +50,13 @@ npm i ang-virtual-keyboard
   }
 ```
 
-**ngModel** : For binding. Use ngModel or formControl
-**appVirtualKeyboard**: inital value in case you have any to be prefilled when keyboard is triggered. For template forms use two binding with property. For reactive forms split initial input value and change output emitter as shown in example.
-**isKeyboardDirectiveActive**: is angular virtual keyboard is active or not 
+**ngModel** : For binding. Use ngModel or formControl  
+**appVirtualKeyboard**: inital value in case you have any to be prefilled when keyboard is triggered. For template forms use two binding with property. For reactive forms split initial input value and change output emitter as shown in example.  
+**isKeyboardDirectiveActive**: is angular virtual keyboard is active or not  
 **kboardType** : Currently 3 types are supported 
     'alphaNumericType1' - No side num pad (this is default layout) 
     'alphaNumericType2' - With side numpad
-    'numeric' - Only Numpad
+    'numeric' - Only Numpad  
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
