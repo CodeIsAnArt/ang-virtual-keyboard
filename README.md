@@ -17,7 +17,7 @@ npm i ang-virtual-keyboard
 ![Keyboard Type 1](https://github.com/CodeIsAnArt/ang-virtual-keyboard/blob/master/projects/ang-virtual-keyboard-sample/src/assets/Screenshots.png?raw=true)
 
 ## Features : 
-**1.  3 layouts **
+**1.  3 layouts **  
         ---- Keyboard without side numpad  
         ---- Keyboard with side numpad  
         ---- Keyboard with only numpad  
@@ -49,7 +49,7 @@ npm i ang-virtual-keyboard
     this.reactiveControl.setValue(e);
   }
 ```
-
+### Properties  
 **ngModel** : For binding. Use ngModel or formControl  
 **appVirtualKeyboard**: inital value in case you have any to be prefilled when keyboard is triggered. For template forms use two binding with property. For reactive forms split initial input value and change output emitter as shown in example.  
 **isKeyboardDirectiveActive**: is angular virtual keyboard is active or not  
