@@ -1,27 +1,67 @@
-# VirtualKeyboardWorkspace
+# Angular Virtual Keyboard
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.1.
+Angular Virtual Keyboard is an angular library that can be used to add a virtual keyboard on an input control. It is simple to use and can be implemented by just importing and adding a directive
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Install ang-virtual-keyboard.
 
-## Code scaffolding
+```bash
+npm i ang-virtual-keyboard
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## ScreenShots
+![Keyboard Type 1](https://github.com/CodeIsAnArt/ang-virtual-keyboard/blob/master/projects/ang-virtual-keyboard-sample/src/assets/AlphaNumericType1.PNG?raw=true)
 
-## Build
+### Other variants
+![Keyboard Type 1](https://github.com/CodeIsAnArt/ang-virtual-keyboard/blob/master/projects/ang-virtual-keyboard-sample/src/assets/Screenshots.png?raw=true)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Features : 
+**1.  3 layouts **
+        ----  Keyboard without side numpad
+        ---- Keyboard with side numpad
+        ---- Keyboard with only numpad
+**2.  Shuffle on key press**
+**3.  Mask on key press**
 
-## Running unit tests
+## Usage
+- Template Forms
+```html
+<!-- Two way binding with property in which you want to store value -->
+<input type="text" name="enterhere"
+       [(ngModel)] = "inputString"
+       [(appVirtualKeyboard)] = "inputString"
+       [isKeyboardDirectiveActive] = "true" [kboardType]="'alphaNumericType2'">
+```
+- Reactive Forms
+```html
+<div class="setKeyBoardWidth">
+  <input type="text" name="reactiveControl" [formControl]="reactiveControl" [appVirtualKeyboard]="''"
+    (appVirtualKeyboardChange)="valueChange($event)" [isKeyboardDirectiveActive]="true"
+    [kboardType]="'alphaNumericType2'">
+</div>
+```
+```ts
+ reactiveControl = new FormControl('');
+ // Read value from event and set in formControl
+   valueChange(e: string) {
+    console.log(e);
+    this.reactiveControl.setValue(e);
+  }
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+**ngModel** : For binding. Use ngModel or formControl
+**appVirtualKeyboard**: inital value in case you have any to be prefilled when keyboard is triggered. For template forms use two binding with property. For reactive forms split initial input value and change output emitter as shown in example.
+**isKeyboardDirectiveActive**: is angular virtual keyboard is active or not 
+**kboardType** : Currently 3 types are supported 
+    'alphaNumericType1' - No side num pad (this is default layout) 
+    'alphaNumericType2' - With side numpad
+    'numeric' - Only Numpad
 
-## Running end-to-end tests
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Please make sure to update tests as appropriate.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## License
+[MIT](https://choosealicense.com/licenses/mit/)

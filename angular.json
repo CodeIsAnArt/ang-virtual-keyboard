@@ -43,28 +43,28 @@
         }
       }
     },
-    "virtual-keyboard-sample": {
+    "ang-virtual-keyboard-sample": {
       "projectType": "application",
       "schematics": {},
-      "root": "projects/virtual-keyboard-sample",
-      "sourceRoot": "projects/virtual-keyboard-sample/src",
+      "root": "projects/ang-virtual-keyboard-sample",
+      "sourceRoot": "projects/ang-virtual-keyboard-sample/src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/virtual-keyboard-sample",
-            "index": "projects/virtual-keyboard-sample/src/index.html",
-            "main": "projects/virtual-keyboard-sample/src/main.ts",
-            "polyfills": "projects/virtual-keyboard-sample/src/polyfills.ts",
-            "tsConfig": "projects/virtual-keyboard-sample/tsconfig.app.json",
+            "outputPath": "dist/ang-virtual-keyboard-sample",
+            "index": "projects/ang-virtual-keyboard-sample/src/index.html",
+            "main": "projects/ang-virtual-keyboard-sample/src/main.ts",
+            "polyfills": "projects/ang-virtual-keyboard-sample/src/polyfills.ts",
+            "tsConfig": "projects/ang-virtual-keyboard-sample/tsconfig.app.json",
             "aot": true,
             "assets": [
-              "projects/virtual-keyboard-sample/src/favicon.ico",
-              "projects/virtual-keyboard-sample/src/assets"
+              "projects/ang-virtual-keyboard-sample/src/favicon.ico",
+              "projects/ang-virtual-keyboard-sample/src/assets"
             ],
             "styles": [
-              "projects/virtual-keyboard-sample/src/styles.css"
+              "projects/ang-virtual-keyboard-sample/src/styles.css"
             ],
             "scripts": []
           },
@@ -72,8 +72,8 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "projects/virtual-keyboard-sample/src/environments/environment.ts",
-                  "with": "projects/virtual-keyboard-sample/src/environments/environment.prod.ts"
+                  "replace": "projects/ang-virtual-keyboard-sample/src/environments/environment.ts",
+                  "with": "projects/ang-virtual-keyboard-sample/src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -101,33 +101,33 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "virtual-keyboard-sample:build"
+            "browserTarget": "ang-virtual-keyboard-sample:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "virtual-keyboard-sample:build:production"
+              "browserTarget": "ang-virtual-keyboard-sample:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "virtual-keyboard-sample:build"
+            "browserTarget": "ang-virtual-keyboard-sample:build"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/virtual-keyboard-sample/src/test.ts",
-            "polyfills": "projects/virtual-keyboard-sample/src/polyfills.ts",
-            "tsConfig": "projects/virtual-keyboard-sample/tsconfig.spec.json",
-            "karmaConfig": "projects/virtual-keyboard-sample/karma.conf.js",
+            "main": "projects/ang-virtual-keyboard-sample/src/test.ts",
+            "polyfills": "projects/ang-virtual-keyboard-sample/src/polyfills.ts",
+            "tsConfig": "projects/ang-virtual-keyboard-sample/tsconfig.spec.json",
+            "karmaConfig": "projects/ang-virtual-keyboard-sample/karma.conf.js",
             "assets": [
-              "projects/virtual-keyboard-sample/src/favicon.ico",
-              "projects/virtual-keyboard-sample/src/assets"
+              "projects/ang-virtual-keyboard-sample/src/favicon.ico",
+              "projects/ang-virtual-keyboard-sample/src/assets"
             ],
             "styles": [
-              "projects/virtual-keyboard-sample/src/styles.css"
+              "projects/ang-virtual-keyboard-sample/src/styles.css"
             ],
             "scripts": []
           }
@@ -136,9 +136,9 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/virtual-keyboard-sample/tsconfig.app.json",
-              "projects/virtual-keyboard-sample/tsconfig.spec.json",
-              "projects/virtual-keyboard-sample/e2e/tsconfig.json"
+              "projects/ang-virtual-keyboard-sample/tsconfig.app.json",
+              "projects/ang-virtual-keyboard-sample/tsconfig.spec.json",
+              "projects/ang-virtual-keyboard-sample/e2e/tsconfig.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -148,12 +148,12 @@
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
-            "protractorConfig": "projects/virtual-keyboard-sample/e2e/protractor.conf.js",
-            "devServerTarget": "virtual-keyboard-sample:serve"
+            "protractorConfig": "projects/ang-virtual-keyboard-sample/e2e/protractor.conf.js",
+            "devServerTarget": "ang-virtual-keyboard-sample:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "virtual-keyboard-sample:serve:production"
+              "devServerTarget": "ang-virtual-keyboard-sample:serve:production"
             }
           }
         }

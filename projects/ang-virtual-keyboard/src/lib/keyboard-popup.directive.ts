@@ -23,7 +23,7 @@ export class KeyboardPopupDirective implements AfterViewInit {
   @Input() appVirtualKeyboard = '';
   @Input() isKeyboardDirectiveActive = false;
   @Output() appVirtualKeyboardChange = new EventEmitter();
-  @Input() kboardType: String = 'alphaNumeric';
+  @Input() kboardType: string = 'alphaNumeric';
   @ViewChild('childComp', { read: ViewContainerRef }) childComp = null;
   keyPressedSubscription?: Subscription;
   closeKeyboardSubscription?: Subscription;

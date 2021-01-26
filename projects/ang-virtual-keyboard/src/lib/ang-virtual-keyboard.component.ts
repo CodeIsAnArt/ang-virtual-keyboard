@@ -27,7 +27,7 @@ export class AngVirtualKeyboardComponent implements OnInit {
   isHoverOn: boolean = false;
   isCapsLockOn: boolean = false;
   hoveredOrMouseDown: boolean = false;
-  kboardType: String = 'alphaNumeric';
+  kboardType: string = 'alphaNumeric';
   numericRowsCount = new Array(3);
 
   constructor(private cdRef: ChangeDetectorRef,
