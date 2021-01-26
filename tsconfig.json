@@ -2,6 +2,12 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "ang-virtual-keyboard": [
+        "dist/ang-virtual-keyboard/ang-virtual-keyboard",
+        "dist/ang-virtual-keyboard"
+      ]
+    },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,

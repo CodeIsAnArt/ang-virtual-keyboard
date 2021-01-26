@@ -1,0 +1,21 @@
+<div>{{inputString}}</div>
+<!-- <app-keyboard [(shareInput)]="inputString"></app-keyboard> -->
+<!-- <button (click)="shareOutput()"></button> -->
+<div class="setKeyBoardWidth">
+<input type="text" name="enterhere"
+       [(ngModel)] = "inputString"
+       [(appVirtualKeyboard)] = "inputString"
+       [isKeyboardDirectiveActive] = "true" [kboardType]="'alphaNumericType2'">
+  </div>
+<div class="setKeyBoardWidth">
+  <input type="text" name="enterhere"
+         [(ngModel)] = "inputString"
+         [(appVirtualKeyboard)] = "inputString"
+         [isKeyboardDirectiveActive] = "true">
+</div>
+<div class="setKeyBoardWidth">
+  <input type="text" name="enterhere"
+         [(ngModel)] = "inputString"
+         [(appVirtualKeyboard)] = "inputString"
+         [isKeyboardDirectiveActive] = "true" [kboardType]="'numeric'">
+</div>
